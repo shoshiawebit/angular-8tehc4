@@ -1,0 +1,11 @@
+
+app-item{
+    padding: 8px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 6px;
+min-height: 100%;
+direction: rtl;
+}

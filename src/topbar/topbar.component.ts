@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
@@ -11,5 +11,12 @@ export class TopbarComponent implements OnInit {
 
   ngOnInit() {
   }
+  @Output() displaySidebar: EventEmitter<boolean> = new EventEmitter<boolean>();
+  checkbox:boolean=true;
 
+  check(){
+    this.displaySidebar.emit(
+     this.checkbox
+    );
+  }
 }
