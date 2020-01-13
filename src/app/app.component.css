@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+ min-height:  100% ;
+  min-width:  100% ; 
+  grid-template-rows:20% 80%;
+  grid-template-columns:80% 20%
+}
+.grid-container > * {
+    background-color:rgba(179, 226, 241, 0.452);
+    color: black;
+border: 2px black solid;
+margin: 2px;
+}
+
+
+.grid-container >  *:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitout-sidebar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

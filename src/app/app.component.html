@@ -1,0 +1,5 @@
+<div class="grid-container">
+    <app-topbar (displaySidebar)="displaySidebar($event)"></app-topbar>
+    <app-container [ngClass]="{'whitout-sidebar': !this.display}" ></app-container>
+    <app-sidebar *ngIf="display" ></app-sidebar>
+</div>
